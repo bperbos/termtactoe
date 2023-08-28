@@ -16,7 +16,6 @@ class Game
 
     @header = Header.new(rows, cols)
     @win = Curses::Window.new(height, width, (rows / 2 - height / 2) + @header.height / 2, cols / 2 - width / 2)
-    # @win.box(VCHAR, HCHAR)
     @win.keypad(true)
 
     @players = Players.new
