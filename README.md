@@ -1,19 +1,22 @@
-# termtactoe
+# Termtactoe
 
-TicTacToe in the terminal
+TicTacToe in a terminal
 
 ## Setup
 
 Using [Rbenv](https://github.com/rbenv/rbenv)
-`rbenv install`
-`bundle`
+```
+rbenv install
+bundle
+```
 
 ## Run
 
-`chmod +x main.rb`
-`./main.rb`
+```
+chmod +x main.rb
+./main.rb
+```
 
 or
 
 `ruby main.rb`
-
