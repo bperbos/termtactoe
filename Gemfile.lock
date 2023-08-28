@@ -1,0 +1,16 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    curses (1.4.4)
+
+PLATFORMS
+  arm64-darwin-22
+
+DEPENDENCIES
+  curses
+
+RUBY VERSION
+   ruby 3.0.3p157
+
+BUNDLED WITH
+   2.2.32
