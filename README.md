@@ -20,3 +20,10 @@ chmod +x main.rb
 or
 
 `ruby main.rb`
+
+## Tests
+
+Without a rake task, use
+````
+ruby -Ilib:test tests/file_test.rb
+```

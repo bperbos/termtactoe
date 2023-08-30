@@ -10,11 +10,8 @@ class Player
 end
 
 class Players
-  def initialize
-    @players = [
-      Player.new('red', color_pair(2)),
-      Player.new('green', color_pair(3))
-    ]
+  def initialize(players)
+    @players = players
     @current = 0
   end
 

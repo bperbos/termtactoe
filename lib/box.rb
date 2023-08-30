@@ -4,7 +4,10 @@ class Box
   attr_reader :x, :y
   attr_accessor :owner, :in_winning_row
 
-  def initialize(x:, y:, win:)
+  VCHAR = '|'
+  HCHAR = '-'
+
+  def initialize(y, x, win)
     @x = x
     @y = y
     @owner = nil

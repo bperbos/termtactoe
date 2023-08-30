@@ -18,7 +18,12 @@ class Game
     @win = Curses::Window.new(height, width, (rows / 2 - height / 2) + @header.height / 2, cols / 2 - width / 2)
     @win.keypad(true)
 
-    @players = Players.new
+    @players = Players.new(
+      [
+        Player.new('red', color_pair(2)),
+        Player.new('green', color_pair(3))
+      ]
+    )
     @map = Map.new(@win, @players)
     @controls = Controls.new(@map, @players)
   end

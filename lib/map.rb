@@ -65,11 +65,7 @@ class Map
   def init(win)
     Array.new(3).map.with_index do |_, index_y|
       Array.new(3).map.with_index do |_, index_x|
-        Box.new(
-          y: index_y * Game::BOX_Y,
-          x: index_x * Game::BOX_X,
-          win: win
-        )
+        Box.new(index_y * Game::BOX_Y, index_x * Game::BOX_X, win)
       end
     end
   end

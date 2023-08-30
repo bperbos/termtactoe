@@ -2,12 +2,9 @@
 # frozen_string_literal: true
 
 require 'curses'
-require_relative 'game'
+require_relative 'lib/game'
 
 include Curses
-
-VCHAR = '|'
-HCHAR = '-'
 
 init_screen
 start_color
